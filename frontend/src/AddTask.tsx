@@ -26,6 +26,7 @@ export const AddTask = ({setTasks} : Props) => {
       });
     setTaskInput('');
   };
+  
   return (
     <>
       <input placeholder='Add a Task' onChange={(e => setTaskInput(e.target.value))}/>

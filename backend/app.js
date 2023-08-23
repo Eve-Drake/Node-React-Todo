@@ -21,8 +21,13 @@ app.delete('/api', (req, res) => {
     const { id } = req.body;
     tasks = tasks.filter((task) => task.id !== id);
     res.status(204).send();
-  });
+});
   
+app.patch('./api', (req, res) =>{
+    const {id} = req.body;
+    var updatedTask = tasks.find(task => task.id === id)
+    updatedTask.completed = 
+})
 
 app.listen(5000, (console.log('live')))
 
